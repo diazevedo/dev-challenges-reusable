@@ -140,7 +140,6 @@ const Reset = createGlobalStyle`
   html {
       height: 100%;
       font-size: 62.5%;
-      border: 10px solid green;
   }
     
   body {
