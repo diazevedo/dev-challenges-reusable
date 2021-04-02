@@ -3,14 +3,14 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Footer from "./components/Footer";
 import Menu from "./components/Menu";
 import Routes from "./routes";
-import GlobalStyle from "./styles/global";
+
 import Reset from "./styles/reset";
 
 function App() {
   return (
     <>
       <Reset />
-      <GlobalStyle />
+
       <Router>
         <Menu />
         <Routes />
