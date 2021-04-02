@@ -12,7 +12,7 @@ const Button = ({
   endIcon = false,
   children,
   color = "default",
-  size = "lg",
+  size = "md",
 }) => {
   return (
     <Styled.Button

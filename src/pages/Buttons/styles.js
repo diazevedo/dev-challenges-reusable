@@ -1,13 +1,11 @@
 import styled from "styled-components";
 
 export const Row = styled.div`
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 30rem));
+  grid-gap: 2rem;
+  align-items: end;
   margin-bottom: 4.5rem;
-
-  & > div:not(:first-child) {
-    margin-left: 5rem;
-  }
 `;
 
 export const Column = styled.div``;

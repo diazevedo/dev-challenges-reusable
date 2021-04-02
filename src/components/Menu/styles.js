@@ -3,10 +3,9 @@ import styled from "styled-components";
 export const Header = styled.header`
   width: 240px;
   background: #fafbfd;
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
-
   padding-top: 5rem;
   padding-left: 5.5rem;
 

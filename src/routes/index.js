@@ -5,7 +5,10 @@ import Buttons from "../pages/Buttons";
 const Routes = () => {
   return (
     <Switch>
-      <Route path="/buttons">
+      <Route exact path="/">
+        <Buttons />
+      </Route>
+      <Route exact path="/buttons">
         <Buttons />
       </Route>
     </Switch>

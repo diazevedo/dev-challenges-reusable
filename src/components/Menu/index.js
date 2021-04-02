@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import * as Styled from "./styles";
 
 const routes = [
@@ -29,6 +29,10 @@ const routes = [
   },
 ];
 
+const activeStyle = {
+  fontWeight: "600",
+  color: "#3F3F3F",
+};
 const Menu = () => {
   return (
     <Styled.Header>
@@ -39,7 +43,9 @@ const Menu = () => {
         <Styled.List>
           {routes.map(({ path, label }) => (
             <li key={path}>
-              <Link to={`/${path}`}>{label}</Link>
+              <NavLink activeStyle={activeStyle} to={`/${path}`}>
+                {label}
+              </NavLink>
             </li>
           ))}
         </Styled.List>

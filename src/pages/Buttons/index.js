@@ -171,10 +171,10 @@ const Buttons = () => {
       </Styled.Row>
 
       <Styled.Row>
-        <p style={{ width: "100%" }}>
-          <Styled.Code>{"<Button  color=”default” />"}</Styled.Code>
-        </p>
         <Styled.Column style={{ marginLeft: "0" }}>
+          <p style={{ width: "100%" }}>
+            <Styled.Code>{"<Button  color=”default” />"}</Styled.Code>
+          </p>
           <Button color="default">Default</Button>
         </Styled.Column>
         <Styled.Column>

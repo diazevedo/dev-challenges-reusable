@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-import { lighten, darken } from "polished";
+import { lighten } from "polished";
 
 const sizes = {
   sm: `0.6rem 1.2rem`,
@@ -10,7 +10,7 @@ const sizes = {
 
 const fontSizes = {
   sm: `1.2rem`,
-  md: `1.6rem`,
+  md: `1.4rem`,
   lg: `1.8rem`,
 };
 
@@ -76,7 +76,7 @@ const variants = {
     normal: (color) => {
       return css`
         color: ${color};
-        background: #fff;
+        background: transparent;
         border: 0;
         padding-left: 0;
 
@@ -105,7 +105,7 @@ export const Button = styled.button.attrs((props) => ({
   justify-content: space-between;
 
   border-radius: 6px;
-  font-size: 1.4rem;
+  font-size: ${(props) => fontSizes[props.size]};
   cursor: pointer;
 
   &:disabled {
