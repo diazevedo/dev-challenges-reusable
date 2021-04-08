@@ -4,7 +4,7 @@ const Footer = styled.footer`
   font-family: "Montserrat", sans-serif;
   font-size: 1.4rem;
   padding-left: 33rem;
-  padding-bottom: 5.5rem;
+  padding-bottom: 3rem;
   color: #a9a9a9;
 
   position: absolute;

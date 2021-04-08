@@ -1,192 +1,170 @@
 import React from "react";
-import * as Styled from "./styles";
 
 import Button from "../../components/Button";
 import PageWrapper from "../../components/PageWrapper";
 
+import * as Grid from "../../components/Grid";
+import Code from "../../components/TextCode";
+
 const Buttons = () => {
   return (
     <PageWrapper title="Buttons">
-      <Styled.Row>
-        <Styled.Column>
-          <p>
-            <Styled.Code>{"<Button />"}</Styled.Code>
-          </p>
+      <Grid.Row>
+        <Grid.Column>
+          <Code>{"<Button />"}</Code>
           <Button>Default</Button>
-        </Styled.Column>
+        </Grid.Column>
 
-        <Styled.Column>
-          <p>
-            <Styled.HoverCode>&:hover, &:focus</Styled.HoverCode>
-          </p>
+        <Grid.Column>
+          <Code hover>&:hover, &:focus</Code>
           <Button hover>Default</Button>
-        </Styled.Column>
-      </Styled.Row>
+        </Grid.Column>
+      </Grid.Row>
 
-      <Styled.Row>
-        <Styled.Column>
-          <p>
-            <Styled.Code>{"<Button variant=”outline” />"}</Styled.Code>
-          </p>
+      <Grid.Row>
+        <Grid.Column>
+          <Code>{"<Button variant=”outline” />"}</Code>
+
           <Button variant="outline" color="primary">
             Default
           </Button>
-        </Styled.Column>
+        </Grid.Column>
 
-        <Styled.Column>
-          <p>
-            <Styled.HoverCode>&:hover, &:focus</Styled.HoverCode>
-          </p>
+        <Grid.Column>
+          <Code hover>&:hover, &:focus</Code>
+
           <Button variant="outline" hover color="primary">
             Default
           </Button>
-        </Styled.Column>
-      </Styled.Row>
+        </Grid.Column>
+      </Grid.Row>
 
-      <Styled.Row>
-        <Styled.Column>
-          <p>
-            <Styled.Code>{"<Button variant=”text” />"}</Styled.Code>
-          </p>
+      <Grid.Row>
+        <Grid.Column>
+          <Code>{"<Button variant=”text” />"}</Code>
+
           <Button variant="text" color="primary" disabledShadow>
             Default
           </Button>
-        </Styled.Column>
+        </Grid.Column>
 
-        <Styled.Column>
-          <p>
-            <Styled.HoverCode>&:hover, &:focus</Styled.HoverCode>
-          </p>
+        <Grid.Column>
+          <Code>&:hover, &:focus</Code>
+
           <Button variant="text" color="primary" hover disabledShadow>
             Default
           </Button>
-        </Styled.Column>
-      </Styled.Row>
+        </Grid.Column>
+      </Grid.Row>
 
-      <Styled.Row>
-        <Styled.Column>
-          <p>
-            <Styled.Code>{"<Button disabledShadow />"}</Styled.Code>
-          </p>
+      <Grid.Row>
+        <Grid.Column>
+          <Code>{"<Button disabledShadow />"}</Code>
+
           <Button disabledShadow color="primary">
             Default
           </Button>
-        </Styled.Column>
-      </Styled.Row>
+        </Grid.Column>
+      </Grid.Row>
 
-      <Styled.Row>
-        <Styled.Column>
-          <p>
-            <Styled.Code>{"<Button disabled />"}</Styled.Code>
-          </p>
+      <Grid.Row>
+        <Grid.Column>
+          <Code>{"<Button disabled />"}</Code>
+
           <Button disabled disabledShadow>
             Disabled
           </Button>
-        </Styled.Column>
-        <Styled.Column>
-          <p>
-            <Styled.Code>{"<Button variant=”text” disabled />"}</Styled.Code>
-          </p>
+        </Grid.Column>
+        <Grid.Column>
+          <Code>{"<Button variant=”text” disabled />"}</Code>
+
           <Button variant="text" disabled disabledShadow color="primary">
             Disabled
           </Button>
-        </Styled.Column>
-      </Styled.Row>
+        </Grid.Column>
+      </Grid.Row>
 
-      <Styled.Row>
-        <Styled.Column>
-          <p>
-            <Styled.Code>
-              {"<Button startIcon=”local_grocery_store” />"}
-            </Styled.Code>
-          </p>
+      <Grid.Row>
+        <Grid.Column>
+          <Code>{"<Button startIcon=”local_grocery_store” />"}</Code>
+
           <Button startIcon="local_grocery_store" color="primary">
             Default
           </Button>
-        </Styled.Column>
-        <Styled.Column>
-          <p>
-            <Styled.Code>
-              {"<Button endIcon=”local_grocery_store” />"}
-            </Styled.Code>
-          </p>
+        </Grid.Column>
+        <Grid.Column>
+          <Code>{"<Button endIcon=”local_grocery_store” />"}</Code>
+
           <Button endIcon="local_grocery_store" color="primary">
             Default
           </Button>
-        </Styled.Column>
-      </Styled.Row>
+        </Grid.Column>
+      </Grid.Row>
 
-      <Styled.Row>
-        <Styled.Column>
-          <p>
-            <Styled.Code>{"<Button  size=”sm” />"}</Styled.Code>
-          </p>
+      <Grid.Row>
+        <Grid.Column>
+          <Code>{"<Button  size=”sm” />"}</Code>
+
           <Button color="primary" size="sm">
             Default
           </Button>
-        </Styled.Column>
-        <Styled.Column>
-          <p>
-            <Styled.Code>{"<Button size=”md” />"}</Styled.Code>
-          </p>
+        </Grid.Column>
+        <Grid.Column>
+          <Code>{"<Button size=”md” />"}</Code>
+
           <Button color="primary" size="md">
             Default
           </Button>
-        </Styled.Column>
-        <Styled.Column>
-          <p>
-            <Styled.Code>{"<Button size=”lg”  />"}</Styled.Code>
-          </p>
+        </Grid.Column>
+        <Grid.Column>
+          <Code>{"<Button size=”lg”  />"}</Code>
+
           <Button color="primary" size="lg">
             Default
           </Button>
-        </Styled.Column>
-      </Styled.Row>
+        </Grid.Column>
+      </Grid.Row>
 
-      <Styled.Row>
-        <Styled.Column>
-          <p>
-            <Styled.Code>{"<Button  color=”default” />"}</Styled.Code>
-          </p>
+      <Grid.Row>
+        <Grid.Column>
+          <Code>{"<Button  color=”default” />"}</Code>
           <Button color="default">Default</Button>
-        </Styled.Column>
-        <Styled.Column>
-          <p>
-            <Styled.Code>{"<Button  color=”primary” />"}</Styled.Code>
-          </p>
-          <Button color="primary">Primary</Button>
-        </Styled.Column>
-        <Styled.Column>
-          <p>
-            <Styled.Code>{"<Button color=”secondary” />"}</Styled.Code>
-          </p>
-          <Button color="secondary">Secondary</Button>
-        </Styled.Column>
-        <Styled.Column>
-          <p>
-            <Styled.Code>{"<Button color=”danger”  />"}</Styled.Code>
-          </p>
-          <Button color="danger">Danger</Button>
-        </Styled.Column>
-      </Styled.Row>
+        </Grid.Column>
 
-      <Styled.Row>
-        <Styled.Column style={{ marginLeft: "0" }}>
-          <p style={{ width: "100%" }}>
-            <Styled.Code>{"<Button  color=”default” />"}</Styled.Code>
-          </p>
-          <Button color="default">Default</Button>
-        </Styled.Column>
-        <Styled.Column>
+        <Grid.Column>
+          <Code>{"<Button  color=”primary” />"}</Code>
           <Button color="primary">Primary</Button>
-        </Styled.Column>
-        <Styled.Column>
+        </Grid.Column>
+
+        <Grid.Column>
+          <Code>{"<Button color=”secondary” />"}</Code>
           <Button color="secondary">Secondary</Button>
-        </Styled.Column>
-        <Styled.Column>
+        </Grid.Column>
+
+        <Grid.Column>
+          <Code>{"<Button color=”danger”  />"}</Code>
           <Button color="danger">Danger</Button>
-        </Styled.Column>
-      </Styled.Row>
+        </Grid.Column>
+      </Grid.Row>
+
+      <Grid.Row>
+        <Grid.Column style={{ marginLeft: "0" }}>
+          <Code style={{ width: "100%" }}>{"<Button  color=”default” />"}</Code>
+          <Button color="default">Default</Button>
+        </Grid.Column>
+
+        <Grid.Column>
+          <Button color="primary">Primary</Button>
+        </Grid.Column>
+
+        <Grid.Column>
+          <Button color="secondary">Secondary</Button>
+        </Grid.Column>
+
+        <Grid.Column>
+          <Button color="danger">Danger</Button>
+        </Grid.Column>
+      </Grid.Row>
     </PageWrapper>
   );
 };

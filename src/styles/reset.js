@@ -144,7 +144,7 @@ const Reset = createGlobalStyle`
   body {
     padding: 0;
     margin: 0;
-    background-color: #454;
+    background-color: #fff;
     height: 100%;
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
