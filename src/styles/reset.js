@@ -138,17 +138,18 @@ const Reset = createGlobalStyle`
   }
 
   html {
-      height: 100%;
       font-size: 62.5%;
   }
     
   body {
     padding: 0;
     margin: 0;
-    background-color: #ffffff;
+    background-color: #454;
     height: 100%;
+    min-height: 100vh;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    position: relative;
   }
 
   * {

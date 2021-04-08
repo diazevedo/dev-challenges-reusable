@@ -7,6 +7,9 @@ const Footer = styled.footer`
   padding-bottom: 5.5rem;
   color: #a9a9a9;
 
+  position: absolute;
+  bottom: 0;
+
   a {
     text-decoration: underline;
     font-weight: 700;
